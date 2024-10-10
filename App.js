@@ -1,21 +1,19 @@
+import 'react-native-gesture-handler';
 import { StatusBar } from 'expo-status-bar';
 import { DeviceEventEmitter, StyleSheet, Text, View } from 'react-native';
-import { iHealthDeviceManagerModule } from '@ihealth/ihealthlibrary-react-native';
+import AppStack from './components/stack/AppStack';
+import { useState } from 'react';
 
 // Path to the license file
-const licenseFileName = 'com_glucofit_glucofit_ios.pem'; // Replace with actual filename
-
-iHealthDeviceManagerModule.sdkAuthWithLicense(licenseFileName);
-
-// Add listener for the authentication result
-DeviceEventEmitter.addListener(iHealthDeviceManagerModule.Event_Authenticate_Result, (e) => {
-  console.log('Authentication Result:', e);
-});
+const licenseFileName = 'com_glucofit_glucofit_ios.pem';
 
 export default function App() {
+
+  const [mac, setMac] = useState('');
+
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+      <AppStack mac={mac} setMac={setMac} />
       <StatusBar style="auto" />
     </View>
   );
@@ -24,8 +22,5 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
   },
 });
