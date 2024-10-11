@@ -10,28 +10,39 @@ const SearchDevice = ({ navigation }) => {
   useEffect(() => {
     iHealthDeviceManagerModule.sdkAuthWithLicense(licenseFileName);
 
-    const authListener = DeviceEventEmitter.addListener(
-      iHealthDeviceManagerModule.Event_Authenticate_Result,
-      (e) => {
-        console.log('Auth result:', e);
-      }
-    );
+    const notifyListener = DeviceEventEmitter.addListener(BG5SModule.Event_Notify,  (event) => {
+      console.log(event);
+    });
+
+    // const authListener = DeviceEventEmitter.addListener(
+    //   iHealthDeviceManagerModule.Event_Authenticate_Result,
+    //   (e) => {
+    //     console.log('Auth result:', e);
+    //   }
+    // );
 
     const type = 'BG5S';
-    const searchListner = DeviceEventEmitter.addListener(
-      iHealthDeviceManagerModule.Event_Scan_Device_Result,
-      (e) => {
-        console.log('Search result:', e)
-      }
-    )
-
     iHealthDeviceManagerModule.startDiscovery(type);
+    const mac = '004D32353E03';
+    iHealthDeviceManagerModule.connectDevice(mac, type);
+
+    // const searchListner = DeviceEventEmitter.addListener(
+    //   iHealthDeviceManagerModule.Event_Scan_Device,
+    //   (e) => {
+    //     console.log('Search result:', e)
+    //   }
+    // )
+
 
     return () => {
-      authListener.remove();
-      searchListner.remove();
-      iHealthDeviceManagerModule.stopDiscovery(type);
-    };
+      notifyListener.remove();
+    }
+
+    // return () => {
+    //   authListener.remove();
+    //   searchListner.remove();
+    //   iHealthDeviceManagerModule.stopDiscovery(type);
+    // };
   }, []);
 
   return (

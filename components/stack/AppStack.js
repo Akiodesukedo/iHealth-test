@@ -3,8 +3,8 @@ import React from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
 import { NavigationContainer } from '@react-navigation/native';
 
-import JustAuth from '../pages/JustAuth';
-import ConnectDevice from '../pages/ConnectDevice';
+import DeviceScreen from '../pages/DeviceScreen';
+import ScanScreen from '../pages/ScanScreen';
 import SearchDevice from '../pages/SearchDevice';
 
 // Create a Stack Navigator
@@ -14,9 +14,8 @@ const AppStack = ({ mac, setMac }) => {
   return (
     <NavigationContainer>
       <Stack.Navigator initialRouteName="Auth">
-        <Stack.Screen name="Auth" component={JustAuth} />
-        <Stack.Screen name="Search Device" component={SearchDevice} initialParams={{ mac, setMac }} />
-        <Stack.Screen name="Connect Device" component={ConnectDevice} initialParams={{ mac, setMac }} />
+        <Stack.Screen name="Scan" component={ScanScreen} />
+        <Stack.Screen name="Device" component={DeviceScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );
