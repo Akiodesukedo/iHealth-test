@@ -1,3 +1,50 @@
 //
 //  Use this file to import your target's public headers that you would like to expose to Swift.
 //
+
+#import <React/RNBGMacro.h>
+#import <React/BG1Module.h>
+#import <React/BG1ProfileModule.h>
+#import <React/BG5Module.h>
+#import <React/BGProfileModule.h>
+#import <React/HS4SModule.h>
+#import <React/HS2Module.h>
+#import <React/HS6Module.h>
+#import <React/HS6ProfileModule.h>
+#import <React/HSProfileModule.h>
+#import <React/BG1SModule.h>
+#import <React/BG1SProfileModule.h>
+#import <React/BG5SModule.h>
+#import <React/BG5SProfileModule.h>
+#import <React/BP5SModule.h>
+#import <React/HS2SModule.h>
+#import <React/HS2SProfileModule.h>
+#import <React/NT13BModule.h>
+#import <React/NT13BProfileModule.h>
+#import <React/TS28SModule.h>
+#import <React/TS28SProfileModule.h>
+#import <iHealthDeviceManagerModule.h>
+#import <React/ECGModule.h>
+#import <React/ECGProfileModule.h>
+#import <React/ECGUSBModule.h>
+#import <React/PO1Module.h>
+#import <React/PO1ProfileModule.h>
+#import <React/PO3Module.h>
+#import <React/POProfileModule.h>
+#import <React/PT3SBTModule.h>
+#import <React/PT3SBTProfileModule.h>
+#import <React/BTMModule.h>
+#import <React/BTMProfileModule.h>
+#import <React/HS2SProSModule.h>
+#import <React/HS2SProProfileModule.h>
+#import <React/BPModule.h>
+#import <React/BP550BTModule.h>
+#import <React/BP7SModule.h>
+#import <React/BP5Module.h>
+#import <React/BP7Module.h>
+#import <React/BP3LModule.h>
+#import <React/AM4Module.h>
+#import <React/AMProfileModule.h>
+#import <React/AM3SModule.h>
+#import <React/AM5ProfileModule.h>
+#import <React/AM5Module.h>
