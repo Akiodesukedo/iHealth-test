@@ -15,20 +15,9 @@
 		666BED24D94542109732818F /* noop-file.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A36CCBA9274E59AB1E9825 /* noop-file.swift */; };
 		96905EF65AED1B983A6B3ABC /* libPods-TestIHealth.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 58EEBF8E8E6FB1BC6CAF49B5 /* libPods-TestIHealth.a */; };
 		B18059E884C0ABDD17F3DC3D /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC715A2D49A985799AEE119 /* ExpoModulesProvider.swift */; };
-		B9C634802CB9C75B0079EFE3 /* com_glucofit_glucofit_ios.pem in Resources */ = {isa = PBXBuildFile; fileRef = B9C6347F2CB9C75B0079EFE3 /* com_glucofit_glucofit_ios.pem */; };
-		B9C634812CB9CAC40079EFE3 /* libReactNativeIOSLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B93012822CB715DD005EE0D9 /* libReactNativeIOSLibrary.a */; settings = {ATTRIBUTES = (Required, ); }; };
+		B92BA6302CBF0635005CF0D8 /* com_glucofit_glucofit_ios.pem in Resources */ = {isa = PBXBuildFile; fileRef = B92BA62F2CBF0635005CF0D8 /* com_glucofit_glucofit_ios.pem */; };
 		BB2F792D24A3F905000567C9 /* Expo.plist in Resources */ = {isa = PBXBuildFile; fileRef = BB2F792C24A3F905000567C9 /* Expo.plist */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		B93012812CB715DD005EE0D9 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B930127D2CB715DB005EE0D9 /* ReactNativeIOSLibrary.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 182D01FA1DE565EC00E9B783;
-			remoteInfo = ReactNativeIOSLibrary;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		13B07F961A680F5B00A75B9A /* TestIHealth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestIHealth.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,8 +33,7 @@
 		7A4D352CD337FB3A3BF06240 /* Pods-TestIHealth.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestIHealth.release.xcconfig"; path = "Target Support Files/Pods-TestIHealth/Pods-TestIHealth.release.xcconfig"; sourceTree = "<group>"; };
 		9BACFFABAAEAC3B3161E75DD /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xml; name = PrivacyInfo.xcprivacy; path = TestIHealth/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = SplashScreen.storyboard; path = TestIHealth/SplashScreen.storyboard; sourceTree = "<group>"; };
-		B930127D2CB715DB005EE0D9 /* ReactNativeIOSLibrary.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ReactNativeIOSLibrary.xcodeproj; path = "../node_modules/@ihealth/ihealthlibrary-react-native/ios/ReactNativeIOSLibrary.xcodeproj"; sourceTree = "<group>"; };
-		B9C6347F2CB9C75B0079EFE3 /* com_glucofit_glucofit_ios.pem */ = {isa = PBXFileReference; lastKnownFileType = file; path = com_glucofit_glucofit_ios.pem; sourceTree = "<group>"; };
+		B92BA62F2CBF0635005CF0D8 /* com_glucofit_glucofit_ios.pem */ = {isa = PBXFileReference; lastKnownFileType = file; path = com_glucofit_glucofit_ios.pem; sourceTree = "<group>"; };
 		BB2F792C24A3F905000567C9 /* Expo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Expo.plist; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		FAC715A2D49A985799AEE119 /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-TestIHealth/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
@@ -56,7 +44,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B9C634812CB9CAC40079EFE3 /* libReactNativeIOSLibrary.a in Frameworks */,
 				96905EF65AED1B983A6B3ABC /* libPods-TestIHealth.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -93,7 +80,6 @@
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
-				B930127D2CB715DB005EE0D9 /* ReactNativeIOSLibrary.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -101,7 +87,7 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
-				B9C6347F2CB9C75B0079EFE3 /* com_glucofit_glucofit_ios.pem */,
+				B92BA62F2CBF0635005CF0D8 /* com_glucofit_glucofit_ios.pem */,
 				13B07FAE1A68108700A75B9A /* TestIHealth */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				83CBBA001A601CBA00E9B192 /* Products */,
@@ -128,14 +114,6 @@
 				FAC715A2D49A985799AEE119 /* ExpoModulesProvider.swift */,
 			);
 			name = TestIHealth;
-			sourceTree = "<group>";
-		};
-		B930127E2CB715DB005EE0D9 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				B93012822CB715DD005EE0D9 /* libReactNativeIOSLibrary.a */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		BB2F792B24A3F905000567C9 /* Supporting */ = {
@@ -213,12 +191,6 @@
 			mainGroup = 83CBB9F61A601CBA00E9B192;
 			productRefGroup = 83CBBA001A601CBA00E9B192 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = B930127E2CB715DB005EE0D9 /* Products */;
-					ProjectRef = B930127D2CB715DB005EE0D9 /* ReactNativeIOSLibrary.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				13B07F861A680F5B00A75B9A /* TestIHealth */,
@@ -226,23 +198,13 @@
 		};
 /* End PBXProject section */
 
-/* Begin PBXReferenceProxy section */
-		B93012822CB715DD005EE0D9 /* libReactNativeIOSLibrary.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libReactNativeIOSLibrary.a;
-			remoteRef = B93012812CB715DD005EE0D9 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
-
 /* Begin PBXResourcesBuildPhase section */
 		13B07F8E1A680F5B00A75B9A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				BB2F792D24A3F905000567C9 /* Expo.plist in Resources */,
-				B9C634802CB9C75B0079EFE3 /* com_glucofit_glucofit_ios.pem in Resources */,
+				B92BA6302CBF0635005CF0D8 /* com_glucofit_glucofit_ios.pem in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				3E461D99554A48A4959DE609 /* SplashScreen.storyboard in Resources */,
 				454F44B4ED9620E599E38FCF /* PrivacyInfo.xcprivacy in Resources */,
@@ -394,7 +356,7 @@
 					"-lc++",
 				);
 				OTHER_SWIFT_FLAGS = "$(inherited) -D EXPO_CONFIGURATION_DEBUG";
-				PRODUCT_BUNDLE_IDENTIFIER = com.akiodesukedo.TestIHealth;
+				PRODUCT_BUNDLE_IDENTIFIER = com.glucofit.glucofit;
 				PRODUCT_NAME = TestIHealth;
 				SWIFT_OBJC_BRIDGING_HEADER = "TestIHealth/TestIHealth-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -426,7 +388,7 @@
 					"-lc++",
 				);
 				OTHER_SWIFT_FLAGS = "$(inherited) -D EXPO_CONFIGURATION_RELEASE";
-				PRODUCT_BUNDLE_IDENTIFIER = com.akiodesukedo.TestIHealth;
+				PRODUCT_BUNDLE_IDENTIFIER = com.glucofit.glucofit;
 				PRODUCT_NAME = TestIHealth;
 				SWIFT_OBJC_BRIDGING_HEADER = "TestIHealth/TestIHealth-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
