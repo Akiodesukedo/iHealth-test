@@ -23,8 +23,8 @@ const DeviceScreen = ({ navigation }) => {
       navigation.goBack();
     }
     return () => {
-      const fn = Reflect.get(deviceAPIs.getDeviceAPI().apis, 'disconnect', mac);
-      console.log(fn)
+      const fn = Reflect.get(deviceAPIs.getDeviceAPI().apis, 'disConnect', mac);
+      console.log(fn);
       fn(mac);
     }
   }, [onDisConnectState])
