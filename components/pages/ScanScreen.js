@@ -15,21 +15,20 @@ const ScanScreen = ({ navigation }) => {
   const [scanDevices, setScanDevices] = useState([]);
 
   const type = "BG5S";
-  const mac = '004D32353E03';
 
   const handleScan = (type) => {
     setScanDevices([]);
     scanDevice(type);
   }
 
-  useEffect(() => {
-    if (onConnectedState.mac != null) {
-      const {mac, type} = onConnectedState;
-      navigation.navigate('Device', {
-        mac, type
-      });
-    }
-  }, [onConnectedState]);
+  // useEffect(() => {
+  //   if (onConnectedState.mac != null) {
+  //     const {mac, type} = onConnectedState;
+  //     navigation.navigate('Device', {
+  //       mac, type
+  //     });
+  //   }
+  // }, [onConnectedState]);
 
   useEffect(() => {
     if (onScanState.mac != null) {
@@ -49,7 +48,8 @@ const ScanScreen = ({ navigation }) => {
         loading={isScanning} 
         onPress={() => {
           handleScan(type);
-        }} />
+        }} 
+      />
         {
         scanDevices.map(item => {
           return (
@@ -67,6 +67,14 @@ const ScanScreen = ({ navigation }) => {
           )
           })
         }
+      <Button
+        containerStyle={styles.containerStyle}  
+        buttonStyle={styles.buttonStyle} 
+        title="Go to Auto Log"
+        onPress={() => {
+          navigation.navigate('AutoLog');;
+        }} 
+      />
     </View>
   )
 }
