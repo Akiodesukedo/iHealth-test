@@ -207,7 +207,7 @@ const AutoLogScreen = ({ navigation }) => {
                 />
                 <Text>
                   Insert test strip in the glucometer and prepare your blood sample.
-                </Text>
+                </Text>   
               </View>
         :
           // First Screen
@@ -218,13 +218,18 @@ const AutoLogScreen = ({ navigation }) => {
             />
             <Text>
               Make sure the bluetooth is turned on and the glucometer is nearby.
-            </Text>            
+            </Text>  
           </View>
       }
       <Text>
         { parsedRes?.action }
         { parsedRes?.RESULT_VALUE }
       </Text>
+      <Button
+                  buttonStyle={styles.buttonStyle} 
+                  onPress={() => moveToResult(5.5)}
+                  title="For fake result screen"
+                />  
     </View>
   )
 }
