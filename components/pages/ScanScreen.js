@@ -41,7 +41,7 @@ const ScanScreen = ({ navigation }) => {
 
   return (
     <View>
-      <Button
+      {/* <Button
         containerStyle={styles.containerStyle}  
         buttonStyle={styles.buttonStyle} 
         title="Scan Device"
@@ -66,7 +66,7 @@ const ScanScreen = ({ navigation }) => {
             </ListItem>
           )
           })
-        }
+        } */}
       <Button
         containerStyle={styles.containerStyle}  
         buttonStyle={styles.buttonStyle} 

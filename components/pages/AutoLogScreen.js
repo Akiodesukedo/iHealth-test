@@ -225,11 +225,11 @@ const AutoLogScreen = ({ navigation }) => {
         { parsedRes?.action }
         { parsedRes?.RESULT_VALUE }
       </Text>
-      <Button
-                  buttonStyle={styles.buttonStyle} 
-                  onPress={() => moveToResult(5.5)}
-                  title="For fake result screen"
-                />  
+      {/* <Button
+        buttonStyle={styles.buttonStyle} 
+        onPress={() => moveToResult(5.5)}
+        title="For fake result screen"
+      />   */}
     </View>
   )
 }
