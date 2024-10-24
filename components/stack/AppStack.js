@@ -8,6 +8,7 @@ import ScanScreen from '../pages/ScanScreen';
 import SearchDevice from '../pages/SearchDevice';
 import BluetoothScreen from '../pages/BluetoothScreen';
 import AutoLogScreen from '../pages/AutoLogScreen';
+import ResultScreen from '../pages/ResultScreen';
 
 // Create a Stack Navigator
 const Stack = createStackNavigator();
@@ -20,6 +21,7 @@ const AppStack = ({ mac, setMac }) => {
         <Stack.Screen name="Scan" component={ScanScreen} />
         <Stack.Screen name="Device" component={DeviceScreen} />
         <Stack.Screen name="AutoLog" component={AutoLogScreen} />
+        <Stack.Screen name="Result" component={ResultScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );
